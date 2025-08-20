@@ -1,0 +1,49 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /*  Use a clean, elegant font */
+    background-color: #fff; /*  White background for luxury feel */
+    color: #333; /*  Dark text for readability */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #d5006d; /*  Pink color for headings */
+    font-weight: bold; /*  Bold headings for emphasis */
+  }
+
+  a {
+    color: #d5006d; /*  Pink links */
+    text-decoration: none; /*  Remove underline */
+    &:hover {
+      text-decoration: underline; /*  Underline on hover for accessibility */
+    }
+  }
+
+  button {
+    background-color: #d5006d; /*  Pink buttons */
+    color: #fff; /*  White text on buttons */
+    border: none; /*  No border */
+    padding: 10px 20px; /*  Padding for button */
+    border-radius: 5px; /*  Rounded corners */
+    cursor: pointer; /*  Pointer cursor on hover */
+    &:hover {
+      background-color: #b0004c; /*  Darker pink on hover */
+    }
+  }
+
+  input, textarea {
+    border: 1px solid #d5006d; /*  Pink border for inputs */
+    border-radius: 5px; /*  Rounded corners */
+    padding: 10px; /*  Padding for inputs */
+    &:focus {
+      outline: none; /*  Remove outline on focus */
+      border-color: #b0004c; /*  Darker pink on focus */
+    }
+  }
+
+  /*  Additional styles can be added as needed */
+`;
+
+export default GlobalStyle;
